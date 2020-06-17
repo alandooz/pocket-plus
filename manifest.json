@@ -13,10 +13,6 @@
    }
  ],
  "browser_action": {
-   "default_title": "Does a thing when you do a thing",
-   "default_icon": {
-     "16": "icons/icon16.png",
-     "32": "icons/icon32.png"
-   }
+   "default_title": "Does a thing when you do a thing"
  }
 }
