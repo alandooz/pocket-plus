@@ -2,17 +2,20 @@
  "manifest_version": 2,
  "name": "PocketPlus",
  "version": "1.0.0",
- "description": "Pocket with a boost.",
+ "description": "Pocket extended :)",
  "short_name": "PocketPlus",
- "permissions": ["activeTab", "declarativeContent", "storage", "cookies"],
+ "permissions": ["*://app.getpocket.com/*", "declarativeContent", "storage", "<all_urls>"],
  "content_scripts": [
    {
-     "matches": ["<all_urls>"],
-     "css": ["background.css"],
-     "js": ["background.js"]
+     "matches": ["*://app.getpocket.com/*"],
+     "js": ["pocketPlus.js"]
    }
  ],
  "browser_action": {
-   "default_title": "Does a thing when you do a thing"
+   "default_icon": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "128": "icons/icon128.png"
+  }
  }
 }
